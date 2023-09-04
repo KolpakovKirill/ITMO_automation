@@ -1,0 +1,4 @@
+/venv
+.idea
+*.pytest_cache
+/pythontutor_Решения задач

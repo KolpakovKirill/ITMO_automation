@@ -32,13 +32,13 @@ num_4(100, 235)
 def season_1(month):
     seasons = ['Зима', 'Весна', 'Лето', 'Осень']
     if month in [12, 1, 2]:
-        season = seasons[0]  # Зима
+        season = seasons[0]
     elif month in [3, 4, 5]:
-        season = seasons[1]  # Весна
+        season = seasons[1]
     elif month in [6, 7, 8]:
-        season = seasons[2]  # Лето
+        season = seasons[2]
     elif month in [9, 10, 11]:
-        season = seasons[3]  # Осень
+        season = seasons[3]
 
         print(season)
 season_1(3)
@@ -46,7 +46,6 @@ season_1(3)
 #Или
 def season_2(month):
     seasons = ['Зима', 'Весна', 'Лето', 'Осень']
-
     if month in [12, 1, 2]:
         season = seasons[0]
     elif month in [3, 4, 5]:
@@ -60,9 +59,9 @@ season_2(1)
 #Или
 def season_3(month):
     seasons = ["зима", "весна", "лето", "осень"]
-    for i in range(1, 13):   #?
+    for i in range(1, 13):
         if month == i:
-            season = seasons[i // 3 % 4] # можно ли проще?
+            season = seasons[i // 3 % 4]
             print(season)
 season_3(3)
 
@@ -80,9 +79,20 @@ def num_5(a):
     for num in a:
         if num > 0:
             positive_count += 1
-    print(f'Количество положительных чисел: {positive_count}')
+    print(positive_count)
 a = [1, -2, 3, 0, 4]
 num_5(a)
+#или
+
+count = 0
+def num_6(numbers):
+    global count
+    for num in numbers:
+        if num > 0:
+            count += 1
+list = [1, -2, 3, -4, 5]
+num_6(list)
+print(count)
 
 #или
 def count_positive_numbers(numbers):

@@ -80,8 +80,8 @@ def num_5(a):
         if num > 0:
             positive_count += 1
     print(positive_count)
-a = [-1, -2, -3, 4, 5]
-num_5(a)
+list = [-1, -2, -3, 4, 5]
+num_5(list)
 #или
 
 count = 0

@@ -104,6 +104,9 @@ def num_7(numbers):
 list = [5, 2, 10, 7, -3]
 positive_count = num_7(list)
 print(positive_count)
+#решение через функции
+#len(list(filtr(lambda x: x>0,a))
+#[1, 3]
 
 #7.	Функция на вход получает 2 переменные.a.	Кол-во лет (int)b.	Кол-во месяцев (int)Вывести в консоль количество дней за это время. Считать, что в каждом месяце 29 дней.
 def year_month(a, b):

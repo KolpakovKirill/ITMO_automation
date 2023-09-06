@@ -22,9 +22,9 @@ num_3(200, 335)
 #ИЛИ
 def num_4 (a, b):
     if abs(a - b) == 135:
-        print('yes')
+        print('Yes')
     else:
-        print('no')
+        print('No')
 num_4(100, 235)
 
 #4.	Функция на вход получает произвольное число от 1 до 12 (номер месяца). Вывести название сезона года в консоль (зима, весна, лето, осень)
@@ -80,7 +80,7 @@ def num_5(a):
         if num > 0:
             positive_count += 1
     print(positive_count)
-a = [1, -2, 3, 0, 4]
+a = [-1, -2, -3, 4, 5]
 num_5(a)
 #или
 
@@ -90,19 +90,19 @@ def num_6(numbers):
     for num in numbers:
         if num > 0:
             count += 1
-list = [1, -2, 3, -4, 5]
+list = [1, -2, -3, 4, 5]
 num_6(list)
 print(count)
 
 #или
-def count_positive_numbers(numbers):
+def num_7(numbers):
     count = 0
     for num in numbers:
         if num > 0:
             count += 1
     return count
-numbers = [5, -2, 10, -7, 3]
-positive_count = count_positive_numbers(numbers)
+list = [5, 2, 10, 7, -3]
+positive_count = num_7(list)
 print(positive_count)
 
 #7.	Функция на вход получает 2 переменные.a.	Кол-во лет (int)b.	Кол-во месяцев (int)Вывести в консоль количество дней за это время. Считать, что в каждом месяце 29 дней.
@@ -113,16 +113,10 @@ def year_month(a, b):
 year_month(3, 6)
 
 #или
-def year_month(a, b):
-    c = a * 365 + b * 29
-    print('Количество дней: ' + str(c))
-
-year_month(3, 6)
-
-#или
 
 def year_month(a, b):
     c = a * 365 + b * 29
     print('Количество дней:',  (c))
 
 year_month(3, 6)
+

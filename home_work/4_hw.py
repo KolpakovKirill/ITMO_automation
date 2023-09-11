@@ -63,7 +63,7 @@ class Math:
         return (self.a - self.b)
 
 
-math_1 = Math(5, 10)           # math_1, math_2 все можно обозвать просто math?
+math_1 = Math(5, 10)
 addition = math_1.addition()
 
 math_2 = Math(7, 13)

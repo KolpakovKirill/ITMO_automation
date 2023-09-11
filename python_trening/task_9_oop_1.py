@@ -1,50 +1,34 @@
-class Input:
-    def __init__(self, loc, text):
-        self.loc = loc
+from task_9_checks import Checks
+class Input(Checks):
+    def __init__(self, Loc, text):
+        super().__init__(Loc)
+        self.Loc = Loc
         self.text = text
 
-#search = Input('Локатор')
-home = Input('Домой', '/home')
-
-
-print(search.loc)
-print(home.text)
-
-
-class Button:
-    def __init__(self, loc, text):
-        self.loc = loc
+class Button(Checks):
+    def __init__(self, Loc, text):
+        super().__init__(Loc)
+        self.Loc = Loc
         self.text = text
 
-search_2 = Button('Локатор')
-home_2 = Button('Домой', '/home')
-
-
-print(search_2.loc)
-print(home_2.text)
-
-
-class Title:
-    def __init__(self, loc, text):
-        self.loc = loc
+class Title(Checks):
+    def __init__(self, Loc, text):
+        super().__init__(Loc)
+        self.Loc = Loc
         self.text = text
 
-search_3 = Title('Локатор')
-home_3 = Title('Домой', '/home')
-
-
-print(search_3.loc)
-print(home_3.text)
-
-
-class Link:
-    def __init__(self, loc, text):
-        self.loc = loc
+class Link(Checks):
+    def __init__(self, Loc, text):
+        super().__init__(Loc)
+        self.Loc = Loc
         self.text = text
 
-search_4 = Link('Локатор')
-home_4 = Link('Домой', '/home')
+search = Input("Location", "text")
+button = Button("Button location", "Button text")
+title = Title("Title location", "Title text")
+link = Link("Link location", "Link text")
 
-
-print(search_4.loc)
-print(home_4.text)
+print(search.text, search.Loc)
+print(button.text, button.Loc)
+print(title.text, title.Loc)
+print(link.text, link.Loc)

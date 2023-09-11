@@ -4,7 +4,7 @@ class Page:  # создали класс
         self.url = url
 
     def get(self):
-        print(url)
+        print(self.url)
 home = Page('https://demoqa.com/')
 home.get()                #как вызов функции  # переход на сайт
 

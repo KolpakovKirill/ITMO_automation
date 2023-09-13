@@ -1,8 +1,8 @@
-from task_9_checks import Checks
+from python_trening.task_9_checks import Checks
 class Input(Checks):
     def __init__(self, Loc, text):
         super().__init__(Loc)
-        self.Loc = Loc
+        self.Loc = Loc                 #Создал две одинаковых переменных , одна наследуется из checks и создаю ее и в Input это не совсем правильно
         self.text = text
 
 class Button(Checks):

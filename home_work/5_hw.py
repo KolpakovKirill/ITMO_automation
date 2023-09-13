@@ -9,12 +9,11 @@ def check_elements():
     try:
         driver.find_element(By.ID, "user-name")
         driver.find_element(By.ID, "password")
-        driver.find_element(By.CSS_SELECTOR, "#login-button")
+        driver.find_element(By.CSS_SELECTOR, "#login-button")   #Или через (By.ID,"login-button")
         print("Элементы найдены")
     except NoSuchElementException:
         print("Элементы не найдены")
-    finally:
-        driver.quit()
+
 
 check_elements()
 
